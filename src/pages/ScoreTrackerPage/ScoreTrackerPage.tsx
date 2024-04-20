@@ -1,7 +1,9 @@
 
 const ScoreTrackerPage = () => {
   return (
-    <div>ScoreTrackerPage</div>
+    <main>
+      
+    </main>
   )
 }
 

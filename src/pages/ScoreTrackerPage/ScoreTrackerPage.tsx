@@ -1,5 +1,6 @@
-import { useEffect } from "react";
+import './scoreTracker.css'
 import usePlayerStorage from "../../common/hooks/usePlayerStorage"
+import { useEffect } from "react";
 import ScoreContainer from "./components/ScoreContainer/ScoreContainer";
 
 const ScoreTrackerPage = () => {
@@ -21,6 +22,7 @@ const ScoreTrackerPage = () => {
           <>no players yet...</>
         )
       }
+      <button className="add-player-button">+</button>
     </main>
   )
 }

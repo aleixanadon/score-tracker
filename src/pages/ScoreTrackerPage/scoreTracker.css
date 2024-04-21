@@ -1,0 +1,14 @@
+.add-player-button {
+  position:fixed;
+	width: 60px;
+	height: 60px;
+	bottom: 2em;
+	right: 0.5em;
+	background-color:#0C9;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+  border: none;
+  font-size: 3em;
+}

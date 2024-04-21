@@ -63,8 +63,9 @@ export const playerStorageSlice = createSlice({
         points: targetPlayer.points,
       } : player);
     },
-    substractPoints: (state: PlayerStorageState, action: PayloadAction<number>) => {
-      state.players = state.players.map((player: PlayerState) => player.id === action.payload ? {
+    substractPoints: (state: PlayerStorageState, action: PayloadAction<PlayerState>) => {
+      let targetPlayer = action.payload;
+      state.players = state.players.map((player: PlayerState) => player.id === targetPlayer.id ? {
         ...player,
         points: player.points - 1,
       } : player);

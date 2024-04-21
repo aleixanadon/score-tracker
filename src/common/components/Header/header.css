@@ -4,3 +4,9 @@ header {
   align-items: center;
   justify-content: space-between;
 }
+
+.burger-button {
+  border: none;
+  background-color: #fff;
+  font-size: 2em;
+}

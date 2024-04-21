@@ -28,21 +28,6 @@ const initialState: PlayerStorageState = {
       points: 16,
     },
     {
-      id: 1,
-      playerName: "Joe Doe",
-      points: 23,
-    },
-    {
-      id: 2,
-      playerName: "Joe Doe",
-      points: 5,
-    },
-    {
-      id: 3,
-      playerName: "Joe Doe",
-      points: 16,
-    },
-    {
       id: 4,
       playerName: "Joe Doe",
       points: 23,
@@ -54,6 +39,21 @@ const initialState: PlayerStorageState = {
     },
     {
       id: 6,
+      playerName: "Joe Doe",
+      points: 16,
+    },
+    {
+      id: 7,
+      playerName: "Joe Doe",
+      points: 23,
+    },
+    {
+      id: 8,
+      playerName: "Joe Doe",
+      points: 5,
+    },
+    {
+      id: 9,
       playerName: "Joe Doe",
       points: 16,
     },

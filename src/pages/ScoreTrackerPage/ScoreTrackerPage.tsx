@@ -2,6 +2,7 @@ import './scoreTracker.css'
 import usePlayerStorage from "../../common/hooks/usePlayerStorage"
 import { useEffect } from "react";
 import ScoreContainer from "./components/ScoreContainer/ScoreContainer";
+import { Link } from 'react-router-dom';
 
 const ScoreTrackerPage = () => {
 
@@ -22,7 +23,7 @@ const ScoreTrackerPage = () => {
           <>no players yet...</>
         )
       }
-      <button className="add-player-button">+</button>
+      <Link to="/score-tracker/newplayer" className="add-player-button">+</Link>
     </main>
   )
 }

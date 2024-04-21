@@ -7,6 +7,7 @@ import HomePage from './pages/HomePage/HomePage.tsx'
 import ScoreTrackerPage from './pages/ScoreTrackerPage/ScoreTrackerPage.tsx'
 import { Provider } from 'react-redux'
 import { store } from './store.ts'
+import NewPlayerPage from './pages/NewPlayerPage/NewPlayerPage.tsx'
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
       {
         path: "/score-tracker/home",
         element: <HomePage />
+      },
+      {
+        path: "/score-tracker/newplayer",
+        element: <NewPlayerPage />
       },
     ]
   }

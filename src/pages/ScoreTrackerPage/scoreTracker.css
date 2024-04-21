@@ -10,5 +10,13 @@
 	text-align:center;
 	box-shadow: 2px 2px 3px #999;
   border: none;
-  font-size: 3em;
+  font-size: 2em;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
 }

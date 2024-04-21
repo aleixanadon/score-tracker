@@ -5,8 +5,8 @@ import usePlayerStorage from "../../../../common/hooks/usePlayerStorage"
 
 const ScoreContainer: React.FC<PlayerState> = (player: PlayerState) => {
 
-  const { id, playerName, points } = player;
-  const { addPoints, updatePoints, substractPoints } = usePlayerStorage();
+  const { playerName, points } = player;
+  const { addPoints, /* updatePoints, */ substractPoints } = usePlayerStorage();
 
   return (
     <li className="li-container">

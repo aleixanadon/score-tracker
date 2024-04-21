@@ -1,5 +1,41 @@
 
+.li-container > * {
+  font-weight: 600;
+}
+
 .li-container {
+  margin: 1em 0;
+  padding: 1em;
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  background-color: #D9D9D9;
+  border-radius: 6px;
+}
+
+.rounded-box {
+  height: 2em;
+  width: 2em;
+  padding: 0.5em;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.points {
+  border-radius: 3px;
+  background-color: #fff;
+  margin-right: 1em;
+}
+
+.playerName {
+  flex-grow: 1;
+}
+
+.button {
+  height: 2em;
+  width: 2em;
+  padding: 0.5em;
+  border: none;
 }

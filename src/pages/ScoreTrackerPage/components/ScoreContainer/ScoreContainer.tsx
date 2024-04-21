@@ -10,11 +10,11 @@ const ScoreContainer: React.FC<PlayerState> = (player: PlayerState) => {
 
   return (
     <li className="li-container">
-      <div className="rounded-box points">{ points }</div>
+      <div className="points-box">{ points }</div>
       <div className="playerName">{ playerName }</div>
-      <button className="rounded-box button minus-button" onClick={() => { substractPoints(player) }} >-</button>
-      <button className="rounded-box button plus-button" onClick={() => { addPoints(player) }}>+</button>
-      <button className="button three-dots-button">
+      <button className="minus-button" onClick={() => { substractPoints(player) }} >-</button>
+      <button className="plus-button" onClick={() => { addPoints(player) }}>+</button>
+      <button className="three-dots-button">
         <ThreeDots/>
       </button>
     </li>

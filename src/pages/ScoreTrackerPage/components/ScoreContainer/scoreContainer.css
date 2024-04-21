@@ -13,7 +13,7 @@
   border-radius: 6px;
 }
 
-.rounded-box {
+.points-box {
   height: 2em;
   width: 2em;
   padding: 0.5em;
@@ -21,10 +21,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.points {
-  border-radius: 3px;
   background-color: #fff;
   margin-right: 1em;
 }
@@ -33,9 +29,29 @@
   flex-grow: 1;
 }
 
-.button {
+.minus-button, .plus-button {
+  margin-left: 0.3em;
   height: 2em;
   width: 2em;
   padding: 0.5em;
+  border-radius: 3px;
   border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+}
+
+.minus-button {
+  background-color: #FF4747;
+}
+
+.plus-button {
+  background-color: #8BDA4D;
+}
+
+.three-dots-button {
+  margin-left: 0.5em;
+  border: none;
+  background-color: transparent;
 }

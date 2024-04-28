@@ -1,4 +1,11 @@
 
+:root {
+  --input-size: 2.4em;
+  --button-width: 4.5em;
+  --button-height: 2.2em;
+  --border-radius: 8px;
+}
+
 .new-player-navbar {
   display: flex;
   justify-content: space-between;
@@ -16,12 +23,17 @@
   gap: 0.5em;
   background-color: #D9D9D9;
   padding: 1em;
-  border-radius: 8px;
+  border-radius: var(--border-radius);
 }
 
 .new-player-input {
   border: none;
   background-color: transparent;
+  font-size: 1.2em;
+}
+
+.focused {
+  border: 2px solid black;
 }
 
 .new-player-input:focus {
@@ -34,27 +46,62 @@
 
 .initial-score-div {
   display: flex;
-  gap: 2em;
-}
-
-.input-number-div {
-  width: 50%;
-  height: 100%;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .score-input-number {
-  width: 100%;
-  height: 100%;
+  width: var(--input-size);
+  height: var(--input-size);
+  border-radius: var(--border-radius);
+  border: none;
+  background-color: #D9D9D9;
+  text-align: center;
+  font-size: 4em;
+  
+}
+
+.score-input-number:focus {
+  outline-color: #000;
 }
 
 .initial-score-buttons {
-  width: 50%;
-  height: 100%;
   display: flex;
   flex-direction: column;
+  gap: 1em;
 }
 
 .initial-score-buttons > * {
-  width: 100%;
-  height: 50%;
+  width: var(--button-width);
+  height: var(--button-height);
+  border: none;
+  font-size: 2em;
+}
+
+.plus-button {
+  -webkit-border-top-left-radius: var(--border-radius);
+  -webkit-border-top-right-radius: var(--border-radius);
+  -moz-border-radius-topleft: var(--border-radius);
+  -moz-border-radius-topright: var(--border-radius);
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+  background-color: #76DD45;
+}
+
+.plus-button:active {
+  background-color: #73b952;
+}
+
+.minus-button {
+  -webkit-border-bottom-right-radius: var(--border-radius);
+  -webkit-border-bottom-left-radius: var(--border-radius);
+  -moz-border-radius-bottomright: var(--border-radius);
+  -moz-border-radius-bottomleft: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
+  background-color: #F43838;
+}
+
+.minus-button:active {
+  background-color: #da2d2d;
 }

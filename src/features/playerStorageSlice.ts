@@ -1,7 +1,7 @@
 import { PayloadAction, createSlice } from '@reduxjs/toolkit'
 
 export interface PlayerState {
-  id: number;
+  id: string;
   playerName: string;
   points: number;
 }
@@ -10,7 +10,7 @@ export interface PlayerStorageState {
   players: PlayerState[]
 }
 
-const initialState: PlayerStorageState = {
+/* const initialState: PlayerStorageState = {
   players: [
     {
       id: 1,
@@ -58,7 +58,11 @@ const initialState: PlayerStorageState = {
       points: 16,
     },
   ]
-}
+} */
+
+const initialState: PlayerStorageState = {
+  players: []
+};
 
 export const playerStorageSlice = createSlice({
   name: 'playerStorage',
@@ -95,10 +99,12 @@ export const playerStorageSlice = createSlice({
     },
     substractPoints: (state: PlayerStorageState, action: PayloadAction<PlayerState>) => {
       let targetPlayer = action.payload;
-      state.players = state.players.map((player: PlayerState) => player.id === targetPlayer.id ? {
-        ...player,
-        points: player.points - 1,
-      } : player);
+      if (targetPlayer.points !== 0) {
+        state.players = state.players.map((player: PlayerState) => player.id === targetPlayer.id ? {
+          ...player,
+          points: player.points - 1,
+        } : player);
+      }
     },
   }
 })

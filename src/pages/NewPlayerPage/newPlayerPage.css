@@ -24,6 +24,7 @@
   background-color: #D9D9D9;
   padding: 1em;
   border-radius: var(--border-radius);
+  margin-top: 1em;
 }
 
 .new-player-input {
@@ -42,6 +43,7 @@
 
 .initial-score-h2 {
   text-align: center;
+  margin-top: 2em;
 }
 
 .initial-score-div {

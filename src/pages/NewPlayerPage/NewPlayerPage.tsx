@@ -1,4 +1,4 @@
-import { Link, redirect, useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import './newPlayerPage.css'
 import { ArrowLeft, Check, Person } from '../../common/icons/icons'
 import { useState } from 'react'
@@ -8,7 +8,7 @@ const NewPlayerPage = () => {
 
   const [isInputFocused, setInputFocused] = useState<boolean>(false);
 
-  const onInputFocus = (e: React.FocusEvent<HTMLInputElement>) => setInputFocused(!isInputFocused);
+  const onInputFocus = () => setInputFocused(!isInputFocused);
 
   const [playerName, setPlayerName] = useState<string>("");
 
